@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <script src="./js/bundle.js"></script>
+    <header id="header-title">
+        <H1 id="title">Student Survey Form</H1>
+    </header>
+    <div id="top-paragraph">
+        <p id="description">
+            Help us to get you know more. Please fill the form.
+        </p>
+    </div>
+    <main class="main">
+        <section class="card">
+            <form action="#" id="survey-form">
+                <div class="card-1">
+                    <ul>
+                        <li>
+                            <label for="name" id="name-label">Name</label>
+                        </li>
+                        <li>
+                            <input type="text" id="name" placeholder="Enter your name" required>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            <label for="email" id="email-label">Email</label>
+                        </li>
+                        <li>
+                            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card-2">
+                    <ul>
+                        <li>
+                            <label for="age" id="number-label">Age</label>
+                        </li>
+                        <li>
+                            <input type="number" id="number" min="1" max="125" name="age" id="age" placeholder="Age" required>
+                        </li>
+                    </ul>
+
+                    <ul id="gender">
+                        <li>
+                            <label for="gender" id="gender-label">Gender</label>
+                        </li>
+                        <li>
+                            <select name="gender" id="dropdown">
+                                    <option disabled value>Select an option</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">N/A</option>                        
+                                </select>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card-3">
+                    <ul>
+                        <li>
+                            <label for="radio-buttons" id="education-label">Education</label>
+                        </li>
+                        <li>
+                            <ul class="card-edu">
+                                <li class="radio"><input name="radio-buttons" value="1" type="radio" class="radio-buttons"><label class="edu">Less than HS diploma</label></li>
+                                <li class="radio"><input name="radio-buttons" value="2" type="radio" class="radio-buttons"><label class="edu">High school</label></li>
+                                <li class="radio"><input name="radio-buttons" value="3" type="radio" class="radio-buttons"><label class="edu">Bachelors degree</label></li>
+                                <li class="radio"><input name="radio-buttons" value="4" type="radio" class="radio-buttons"><label class="edu">Post Graduate degree</label></li>
+                            </ul>
+
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            <label for="" id="education-label">Check any interests that you like</label>
+
+                        </li>
+                        <li>
+                            <ul id="preferences">
+                                <li class="checkbox"><input name="prefer" value="1" type="checkbox" class="checkbox-buttons"><label class="edu">Arts & Entertainment</label></li>
+                                <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="checkbox-buttons"><label class="edu">Autos & Vehicles </li>
+                                <li class="checkbox"><input name="prefer" value="5" type="checkbox" class="checkbox-buttons"><label class="edu">Internet & Telecom</label></li>
+                                <li class="checkbox"><input name="prefer" value="3" type="checkbox" class="checkbox-buttons"><label class="edu">Beauty & Fitness</label></li>
+                                <li class="checkbox"><input name="prefer" value="7" type="checkbox" class="checkbox-buttons"><label class="edu">Home & Garden</label></li>
+                                <li class="checkbox"><input name="prefer" value="8" type="checkbox" class="checkbox-buttons"><label class="edu">Pets & Animals</label></li>
+
+                            </ul>
+
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card-4">
+                    <ul class="suggest">
+                        <li>
+                            <label for="suggestion" id="suggestion-label">Would you like to suggest?</label>
+                        </li>
+                        <li>
+                            <textarea id="suggestion" class="input-field " name="suggest" placeholder="Enter your comment here... "></textarea>
+                        </li>
+                    </ul>
+
+
+                </div>
+
+                <ul class="submit-label">
+                    <li>
+                        <button id="submit" type="submit">Submit</button>
+                    </li>
+                </ul>
+            </form>
+        </section>
+    </main>
+</body>
+<footer id="footer">
+    <p><em>2019 - All rights reserved. Designed and developed by Dave.</em></p>
+</footer>
+
+</html>
